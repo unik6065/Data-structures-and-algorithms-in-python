@@ -17,6 +17,8 @@ arr = initArray()
 
 print("Array containing : ", len(arr), " items\n", arr)
 
+print("Median value for this array is :", arr.median())
+
 for test in['initArray().bubbleSort()', 'initArray().selectionSort', 'initArray().insertionSort']:
     elapsed = timeit.timeit(test, number=100, globals=globals())
     print (test, " took ", elapsed, " seconds", flush=True)

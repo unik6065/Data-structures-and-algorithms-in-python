@@ -57,6 +57,10 @@ class Array(object):
         ans += "]"                              # Surround with square bracket
         return ans
 
+    def median(self):                           # Calculate the median and return it
+        self.insertionSort()                    # First sort the array
+        return self.__a[self.__nItems // 2]     # Return the value in the middle
+
     ## Sorting methods ##
 
     def bubbleSort(self):                       # Sort comparing adjacent vals
