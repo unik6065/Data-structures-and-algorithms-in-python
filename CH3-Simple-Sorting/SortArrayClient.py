@@ -24,5 +24,5 @@ for test in['initArray().bubbleSort()', 'initArray().selectionSort', 'initArray(
     print (test, " took ", elapsed, " seconds", flush=True)
 
 
-arr.insertionSort()
+arr.bubbleSort()
 print('Sorted array contains:\n', arr)

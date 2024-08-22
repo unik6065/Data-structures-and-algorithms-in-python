@@ -69,6 +69,7 @@ class Array(object):
                 if self.__a[inner] > self.__a[inner + 1]: # If elem less than
                     self.swap(inner, inner + 1) # than adjacent value, swap
 
+
     def selectionSort(self):                    # Sort by repeated inserts
         for outer in range(self.__nItems-1):    # Swapping in to the leftmost
             min = outer                         # Assume min is leftmost
