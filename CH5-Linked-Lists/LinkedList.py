@@ -98,3 +98,21 @@ class LinkedList(object):           # A linked list of data elements
 
         # Since loop ended without finding item, raise exception
         raise Exception('No item with matching key found in list')
+
+    class __ListIterator(object):
+        def __init__(self, llist):
+            self._llist = llist
+            self._next = llist.getNext()
+
+        def next(self):
+            if self._next is None:
+                raise StopIteration
+            item = self._next.getData()
+            self._next = self._next.getNext()
+            return item
+
+        def hasMore(self):
+            return self._next is not None
+
+    def iterator(self):
+        return LinkedList.__ListIterator(self)
