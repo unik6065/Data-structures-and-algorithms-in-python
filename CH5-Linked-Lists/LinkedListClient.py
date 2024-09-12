@@ -20,3 +20,10 @@ while ite.hasMore():
     print('The next item is:', ite.next())
 
 print('End of iterator')
+
+print('Using build in iterator')
+
+for item in llist:
+    print(item)
+
+print('End of iterator')
